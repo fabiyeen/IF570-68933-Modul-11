@@ -26,8 +26,8 @@ class RaceParticipant(
     val name: String,
     val maxProgress: Int = 100,
     val progressDelayMillis: Long = 500L,
-    private val progressIncrement: Int = 1,
-    private val initialProgress: Int = 0
+    val progressIncrement: Int = 1,
+    val initialProgress: Int = 0
 ) {
     init {
         require(maxProgress > 0) { "maxProgress=$maxProgress; must be > 0" }
